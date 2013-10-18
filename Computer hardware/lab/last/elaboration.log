@@ -1,0 +1,35 @@
+Active-HDL 9.1.2354.4209  2013-01-03 02:29:27
+
+Elaboration top modules:
+Architecture                  behavior(microprocessor)
+
+
+------------------------------------------------------------------------------------------------
+Entity         | Architecture | Library | Info | Compiler Version         | Compilation Options
+------------------------------------------------------------------------------------------------
+microprocessor | behavior     | last    |      | 9.1.2354.4209  (Windows) | -O3
+instruction    | simple       | last    |      | 9.1.2354.4209  (Windows) | -O3
+enable         | simple       | last    |      | 9.1.2354.4209  (Windows) | -O3
+reg            | simple       | last    |      | 9.1.2354.4209  (Windows) | -O3
+alu            | simple       | last    |      | 9.1.2354.4209  (Windows) | -O3
+comparation    | simple       | last    |      | 9.1.2354.4209  (Windows) | -O3
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+VHDL Package                  | Library | Info | Compiler Version         | Compilation Options
+------------------------------------------------------------------------------------------------
+standard                      | std     |      |                          | <unavailable>
+TEXTIO                        | std     |      | 9.1.2354.4209  (Windows) |  -2008
+std_logic_1164                | ieee    |      | 9.1.2354.4209  (Windows) |  -2008
+std_logic_arith               | ieee    |      | 9.1.2354.4209  (Windows) | 
+STD_LOGIC_UNSIGNED            | ieee    |      | 9.1.2354.4209  (Windows) | 
+STD_LOGIC_SIGNED              | ieee    |      | 9.1.2354.4209  (Windows) | 
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+Library                       | Comment
+------------------------------------------------------------------------------------------------
+ieee                          | Standard IEEE packages library
+last                          | None
+std                           | Standard VHDL library
+------------------------------------------------------------------------------------------------

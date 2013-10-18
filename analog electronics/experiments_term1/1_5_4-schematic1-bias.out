@@ -1,0 +1,143 @@
+
+**** 12/12/10 04:57:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_5_4-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_5_4-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_5_4-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_5_4-SCHEMATIC1.net ****
+* source 1_5_4
+R_R2         N02387 N01620  2.2k  
+R_R13         0 N02627  330  
+Q_Q3         N01722 N02559 N02627 Q2N2222
+R_R3         N02439 N01620  12k  
+C_C1         N02387 N02439  10u  
+R_R14         N02249 N02714  100k  
+R_R4         N02785 N01620  2.2k  
+C_C2         N02785 N02559  10u  
+R_R15         N02517 N02488  91  
+R_R5         N02559 N01620  14k  
+C_C3         N01722 N01774  10u  
+R_R6         N01722 N01620  2.2k  
+C_C4         0 N02627  100u  
+C_C8         N02714 N01774  100u  
+R_R7         0 N02249  11k  
+C_C5         0 N02517  100u  
+V_V2         N01620 0 12Vdc
+R_R8         0 N02178  1g  
+C_C6         0 N02355  100u  
+R_R16         0 N01774  1g  
+I_I1         N02178 0 DC 0Adc AC 0.1uAac 
+R_R9         0 N02355  68k  
+C_C7         N02249 N02178  10u  
+R_R10         0 N02439  56k  
+Q_Q1         N02387 N02249 N02355 Q2N2222
+R_R11         0 N02517  14k  
+R_R1         N02249 N01620  1.2k  
+R_R12         0 N02559  2.2k  
+Q_Q2         N02785 N02439 N02488 Q2N2222
+
+**** RESUMING 1_5_4-schematic1-bias.sim.cir ****
+.END
+
+**** 12/12/10 04:57:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_5_4-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/12/10 04:57:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_5_4-schematic1-bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01620)   12.0000 (N01722)    5.8555 (N01774)    0.0000 (N02178)    0.0000     
+
+(N02249)   10.8180 (N02355)   10.2220 (N02387)   11.6720 (N02439)    9.8375     
+
+(N02488)    9.2031 (N02517)    9.1436 (N02559)    1.5984 (N02627)     .9271     
+
+(N02714)   10.8180 (N02785)   10.5730 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -5.499E-03
+
+    TOTAL POWER DISSIPATION   6.60E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .19
+

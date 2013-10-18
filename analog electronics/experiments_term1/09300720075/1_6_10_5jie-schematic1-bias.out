@@ -1,0 +1,219 @@
+
+**** 12/28/10 16:13:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_10_5jie-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_6_10_5jie-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_6_10_5jie-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_6_10_5jie-SCHEMATIC1.net ****
+* source 1_6_10_5JIE
+R_R22         N00879 N02539  36k  
+V_V13         N01094 0 12Vdc
+R_R32         N00879 N01106  1g  
+R_R11         N00845 N00806  20k  
+R_R12         N02539 N02399  13k  
+C_C22         N00879 N02399  510p  
+R_R21         N00745 N00845  33k  
+X_U23         N00774 N00911 N01094 N01052 N00745 uA741
+R_R42         N01106 N03423  10k  
+X_U21         N00806 N00946 N01178 N01136 N00879 uA741
+R_R31         N00745 N00946  1g  
+R_R41         N00946 N00879  10k  
+V_V22         0 N02433 12Vdc
+C_C11         N00845 N00879  2000p  
+X_U22         N02399 N01106 N02607 N02433 N03423 uA741
+C_C21         N00745 N00806  180p  
+V_V23         0 N01052 12Vdc
+R_R23         0 N00911  1g  
+V_V11         N01178 0 12Vdc
+V_V12         N02607 0 12Vdc
+R_R13         N00697 N00774  16k  
+V_V21         0 N01136 12Vdc
+C_C12         N02539 N03423  1000p  
+R_R33         N00911 N00745  10k  
+C_C13         0 N00774  1000p  
+V_V3         N00697 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING 1_6_10_5jie-schematic1-bias.sim.cir ****
+.END
+
+**** 12/28/10 16:13:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_10_5jie-schematic1-bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U23.dx        X_U23.dy        X_U21.dx        X_U21.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U22.dx        X_U22.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 12/28/10 16:13:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_10_5jie-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U23.qx        X_U21.qx        X_U22.qx        
+               NPN             NPN             NPN             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 12/28/10 16:13:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_10_5jie-schematic1-bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00697)    0.0000 (N00745)-458.7E-06 (N00774)    -.0013 (N00806)    -.0047     
+
+(N00845)    -.0031 (N00879)    -.0039 (N00911)    -.0013 (N00946)    -.0047     
+
+(N01052)  -12.0000 (N01094)   12.0000 (N01106)    -.0078 (N01136)  -12.0000     
+
+(N01178)   12.0000 (N02399)    -.0078 (N02433)  -12.0000 (N02539)    -.0067     
+
+(N02607)   12.0000 (N03423)    -.0070 (X_U21.6) 361.9E-09                       
+
+(X_U21.7)    -.0039                   (X_U21.8)    -.0039                       
+
+(X_U21.9)    0.0000                   (X_U22.6) 654.2E-09                       
+
+(X_U22.7)    -.0070                   (X_U22.8)    -.0070                       
+
+(X_U22.9)    0.0000                   (X_U23.6) 40.70E-09                       
+
+(X_U23.7)-450.7E-06                   (X_U23.8)-450.7E-06                       
+
+(X_U23.9)    0.0000                   (X_U21.10)    -.6123                      
+
+(X_U21.11)   11.9600                  (X_U21.12)   11.9600                      
+
+(X_U21.13)    -.5985                  (X_U21.14)    -.5985                      
+
+(X_U21.53)   11.0000                  (X_U21.54)  -11.0000                      
+
+(X_U21.90) 159.5E-06                  (X_U21.91)   40.0000                      
+
+(X_U21.92)  -40.0000                  (X_U21.99)    0.0000                      
+
+(X_U22.10)    -.6154                  (X_U22.11)   11.9600                      
+
+(X_U22.12)   11.9600                  (X_U22.13)    -.6016                      
+
+(X_U22.14)    -.6016                  (X_U22.53)   11.0000                      
+
+(X_U22.54)  -11.0000                  (X_U22.90) 79.75E-06                      
+
+(X_U22.91)   40.0000                  (X_U22.92)  -40.0000                      
+
+(X_U22.99)    0.0000                  (X_U23.10)    -.6089                      
+
+(X_U23.11)   11.9600                  (X_U23.12)   11.9600                      
+
+(X_U23.13)    -.5951                  (X_U23.14)    -.5951                      
+
+(X_U23.53)   11.0000                  (X_U23.54)  -11.0000                      
+
+(X_U23.90) 159.5E-06                  (X_U23.91)   40.0000                      
+
+(X_U23.92)  -40.0000                  (X_U23.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V13       -1.337E-03
+    V_V22       -1.337E-03
+    V_V23       -1.337E-03
+    V_V11       -1.337E-03
+    V_V12       -1.337E-03
+    V_V21       -1.337E-03
+    V_V3        -7.973E-08
+    X_U23.vb     4.070E-13
+    X_U23.vc     1.100E-11
+    X_U23.ve     1.091E-11
+    X_U23.vlim   1.595E-07
+    X_U23.vlp   -4.000E-11
+    X_U23.vln   -4.000E-11
+    X_U21.vb     3.619E-12
+    X_U21.vc     1.100E-11
+    X_U21.ve     1.091E-11
+    X_U21.vlim   1.595E-07
+    X_U21.vlp   -4.000E-11
+    X_U21.vln   -4.000E-11
+    X_U22.vb     6.542E-12
+    X_U22.vc     1.101E-11
+    X_U22.ve     1.091E-11
+    X_U22.vlim   7.975E-08
+    X_U22.vlp   -4.000E-11
+    X_U22.vln   -4.000E-11
+
+    TOTAL POWER DISSIPATION   9.62E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .69
+

@@ -1,0 +1,57 @@
+
+**** 12/01/10 17:07:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_4_2-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_4_2-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_4_2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_4_2-SCHEMATIC1.net ****
+* source 1_4_2
+Q_Q2         N01129 N01872 N01808 Q2N2222
+V_V5         0 N00883 6Vdc
+R_R2         N00994 N00774  620  
+Q_Q1         N01872 N01872 N01779 Q2N2222
+R_R1         N00994 N00965  5.1k  
+R_R3         N00965 N00774  620  
+R_R4         N00883 N01808  51  
+Q_Q2         N00965 N01089 N01129 Q2N2222
+$
+ERROR -- Name "Q_Q2" is defined more than once
+V_V1         N01258 N01193  
++SIN 0 5m 1 0 0 0
+V_V2         N01193 0  
++SIN 0 0 1 0 0 0
+V_V3         N01193 N01089  
++SIN 0 5m 1 0 0 0
+R_R5         N01872 N00774  910  
+Q_Q1         N00994 N01258 N01129 Q2N2222
+$
+ERROR -- Name "Q_Q1" is defined more than once
+R_R6         N00883 N01779  51  
+V_V4         N00774 0 6Vdc
+
+**** RESUMING 1_4_2-schematic1-bias.sim.cir ****
+.END
+

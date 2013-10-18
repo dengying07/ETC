@@ -1,0 +1,17 @@
+[Files List]
+D:\activeHDL\Vlib\std/src/standard.vhd=S
+D:\activeHDL\Vlib\std/src/textio.vhd=S
+D:\activeHDL\VLIB\ieee/src/std_logic_1164.vhdl=S
+D:\activeHDL\VLIB\ieee/src/std_logic_1164-body.vhdl=S
+D:\activeHDL\VLIB\ieee/src/arith_p.vhd=S
+D:\activeHDL\VLIB\ieee/src/arith_b.vhd=S
+D:\activeHDL\VLIB\ieee/src/unsigned_p.vhd=S
+D:\activeHDL\VLIB\ieee/src/unsigned_b.vhd=S
+D:\activeHDL\VLIB\ieee/src/signed_p.vhd=S
+D:\activeHDL\VLIB\ieee/src/signed_b.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/comparation.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/alu.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/register.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/enable.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/instruction.vhd=S
+C:\Users\deng\Desktop\EE3A\lablast\lablast\last\last/src/microprocessor.vhd=S

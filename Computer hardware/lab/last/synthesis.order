@@ -1,0 +1,7 @@
+i<>.\src\alu.vhd
+i<>.\src\enable.vhd
+i<>.\src\comparation.vhd
+i<>.\src\register.vhd
+i<>.\src\instruction.vhd
+i<>.\src\testbench.vhd
+i<>.\src\microprocessor.vhd

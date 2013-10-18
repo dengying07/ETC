@@ -1,0 +1,56 @@
+
+**** 11/08/10 16:09:42 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ D:\09300720075\1_11-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_11-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 1000 1 200000
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_11-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_11-SCHEMATIC1.net ****
+* source 1_11
+C_C1         0 N00620  560p  
+R_R1         0 N00620  2k  
+L_L1         N00586 N00620  4.3mH  
+L_L2         0 N01324  4.3m  
+V_V1         N01943 0 DC 0Vdc AC 1Vac 
+L_L3         N01943 N01981  8.3m  
+C_C3         N01981 N02008  300p  
+V_V1         N01212 0 DC 0Vdc AC 1Vac 
+$
+ERROR -- Name "V_V1" is defined more than once
+R_R1         0 N01324  2.771k  
+---------------$
+ERROR -- Expecting keyword STIMULUS, saw N01324.
+
+R_R2         0 N02008  1.035k  
+C_C2         N01212 N01324  560p  
+V_V1         N00586 0 DC 0Vdc AC 1Vac 
+$
+ERROR -- Name "V_V1" is defined more than once
+--------------------------------------$
+ERROR -- Missing node
+
+**** RESUMING 1_11-schematic1-bias.sim.cir ****
+.END
+

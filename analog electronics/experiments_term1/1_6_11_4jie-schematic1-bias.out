@@ -1,0 +1,172 @@
+
+**** 12/28/10 15:00:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\1_6_11_4jie-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_6_11_4jie-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_6_11_4jie-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_6_11_4jie-SCHEMATIC1.net ****
+* source 1_6_11_4JIE
+R_R8         N01257 N01200  15k  
+X_U1         N01513 N01424 N00879 N00995 N01317 uA741
+V_V3         N006591 0 DC 0Vdc AC 1Vac 
+C_C1         N01486 N01317  3300p  
+C_C2         N01257 N01108  1000p  
+X_U2         N01200 N01173 N00879 N00995 N01108 uA741
+C_C3         0 N01513  470p  
+R_R1         0 N01424  1g  
+C_C4         0 N01200  820p  
+R_R2         N01424 N01317  10k  
+V_V1         N00879 0 12Vdc
+R_R3         0 N01173  1g  
+V_V2         0 N00995 12Vdc
+R_R4         N01173 N01108  10k  
+R_R5         N006591 N01486  15k  
+R_R6         N01486 N01513  11k  
+R_R7         N01317 N01257  22k  
+
+**** RESUMING 1_6_11_4jie-schematic1-bias.sim.cir ****
+.END
+
+**** 12/28/10 15:00:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\1_6_11_4jie-schematic1-bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         X_U2.dx         X_U2.dy         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/28/10 15:00:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\1_6_11_4jie-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.qx         
+               NPN             NPN             
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 12/28/10 15:00:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\1_6_11_4jie-schematic1-bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00879)   12.0000 (N00995)  -12.0000 (N01108)    -.0034 (N01173)    -.0042     
+
+(N01200)    -.0042 (N01257)    -.0030 (N01317)    -.0013 (N01424)    -.0021     
+
+(N01486)    -.0012 (N01513)    -.0021 (X_U1.6) 115.8E-09 (X_U1.7)    -.0012     
+
+(X_U1.8)    -.0012 (X_U1.9)    0.0000 (X_U2.6) 318.0E-09 (X_U2.7)    -.0034     
+
+(X_U2.8)    -.0034 (X_U2.9)    0.0000 (N006591)    0.0000                       
+
+(X_U1.10)    -.6097                   (X_U1.11)   11.9600                       
+
+(X_U1.12)   11.9600                   (X_U1.13)    -.5959                       
+
+(X_U1.14)    -.5959                   (X_U1.53)   11.0000                       
+
+(X_U1.54)  -11.0000                   (X_U1.90) 159.5E-06                       
+
+(X_U1.91)   40.0000                   (X_U1.92)  -40.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)    -.6119                       
+
+(X_U2.11)   11.9600                   (X_U2.12)   11.9600                       
+
+(X_U2.13)    -.5980                   (X_U2.14)    -.5980                       
+
+(X_U2.53)   11.0000                   (X_U2.54)  -11.0000                       
+
+(X_U2.90) 79.76E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -7.972E-08
+    V_V1        -2.673E-03
+    V_V2        -2.673E-03
+    X_U1.vb      1.158E-12
+    X_U1.vc      1.100E-11
+    X_U1.ve      1.091E-11
+    X_U1.vlim    1.595E-07
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U2.vb      3.180E-12
+    X_U2.vc      1.100E-11
+    X_U2.ve      1.091E-11
+    X_U2.vlim    7.976E-08
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   6.42E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .28
+

@@ -1,0 +1,140 @@
+
+**** 12/06/10 16:00:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ D:\09300720075\1_4_3-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_4_3-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100000000
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_4_3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_4_3-SCHEMATIC1.net ****
+* source 1_4_3
+Q_Q5         N02958 N02958 N03694 Q2N2605
+Q_Q9         N01129 N01872 N01808 Q2N2222
+V_V5         0 N00883 6Vdc
+R_R2         N005091 N00774  51  
+R_R7         N03694 N00774  51  
+Q_Q10         N01872 N01872 N01779 Q2N2222
+R_R3         N005311 N00774  51  
+V_V3         N01258 0 DC 0Vdc AC 5mVac 
+R_R8         N03665 N00774  160  
+R_R4         N00883 N01808  100  
+Q_Q2         N00965 N01089 N01129 Q2N2222
+R_R9         0 N00965  1k  
+V_V2         0 N01089 DC 0Vdc AC 5mVac 
+Q_Q3         N00965 N03909 N005311 Q2N2605
+Q_Q4         N00994 N03909 N005091 Q2N2605
+R_R5         N01872 N02958  1.1k  
+Q_Q1         N00994 N01258 N01129 Q2N2222
+Q_Q11         N00883 N00994 N03909 Q2N2605
+R_R6         N00883 N01779  51  
+Q_Q6         N00965 N02958 N03665 Q2N2605
+V_V4         N00774 0 6Vdc
+
+**** RESUMING 1_4_3-schematic1-bias.sim.cir ****
+.END
+
+**** 12/06/10 16:00:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ D:\09300720075\1_4_3-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2605         Q2N2222         
+               PNP             NPN             
+          IS    6.734000E-15   14.340000E-15 
+          BF  163.8           255.9          
+          NF    1               1            
+         VAF   45.7            74.03         
+         IKF     .1832           .2847       
+         ISE    6.734000E-15   14.340000E-15 
+          NE    1.676           1.307        
+          BR    2.763           6.092        
+          NR    1               1            
+          RB   10              10            
+          RC    1.67            1            
+         CJE    7.500000E-12   22.010000E-12 
+         MJE     .2861           .377        
+         CJC    6.200000E-12    7.306000E-12 
+         MJC     .301            .3416       
+          TF  467.500000E-12  411.100000E-12 
+         XTF    8               3            
+         VTF    5               1.7          
+         ITF     .17             .6          
+          TR   10.520000E-09   46.910000E-09 
+         XTB    1.5             1.5          
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 12/06/10 16:00:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ D:\09300720075\1_4_3-schematic1-bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00774)    6.0000 (N00883)   -6.0000 (N00965)    3.0308 (N00994)    4.6260     
+
+(N01089)    0.0000 (N01129)    -.6664 (N01258)    0.0000 (N01779)   -5.5526     
+
+(N01808)   -5.5342 (N01872)   -4.8495 (N02958)    4.8290 (N03665)    5.5221     
+
+(N03694)    5.5522 (N03909)    5.1934 (N005091)    5.8807                       
+
+(N005311)    5.8799                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V5        -1.346E-02
+    V_V3        -1.382E-05
+    V_V2         1.382E-05
+    V_V4        -1.646E-02
+
+    TOTAL POWER DISSIPATION   1.80E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .22
+

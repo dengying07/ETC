@@ -1,0 +1,92 @@
+
+**** 12/20/10 00:08:06 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_5a-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_6_5a-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 -2 1.5 0.5 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_6_5a-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_6_5a-SCHEMATIC1.net ****
+* source 1_6_5A
+R_R1         N00922 N01299  100k  
+R_R4         N01087 N00922  10k  
+R_R2         N00892 N00922  10k  
+V_V3         N00892 0 0.5Vdc
+R_R3         0 N01347  4.7k  
+V_V4         N01087 0 0.25Vdc
+V_V1         N01703 0 12Vdc
+X_U2         N01347 N00922 N01703 N01238 N01299 uA741
+V_V2         0 N01238 12Vdc
+
+**** RESUMING 1_6_5a-schematic1-bias.sim.cir ****
+.END
+
+**** 12/20/10 00:08:06 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_5a-schematic1-bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         X_U2.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 12/20/10 00:08:06 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6_5a-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

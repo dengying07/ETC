@@ -1,0 +1,142 @@
+
+**** 12/19/10 23:52:36 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6cmrr-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_6cmrr-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 0.05m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_6cmrr-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_6cmrr-SCHEMATIC1.net ****
+* source 1_6CMRR
+R_R1         N00736 N00929  51k  
+R_R2         N00698 N00736  51  
+R_R3         N00698 N01021  51  
+R_R4         0 N01021  51k  
+X_U2         N01021 N00736 N01123 N00887 N00929 uA741
+V_V1         N01123 0 12Vdc
+V_V2         0 N00887 12Vdc
+V_V3         N00698 0  
++SIN 0 1 100 0 0 0
+
+**** RESUMING 1_6cmrr-schematic1-bias.sim.cir ****
+.END
+
+**** 12/19/10 23:52:36 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6cmrr-schematic1-bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         X_U2.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 12/19/10 23:52:36 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6cmrr-schematic1-bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/19/10 23:52:36 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_6cmrr-schematic1-bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00698)    0.0000 (N00736) 15.09E-06 (N00887)  -12.0000 (N00929)     .0192     
+
+(N01021)-4.062E-06 (N01123)   12.0000 (X_U2.6)-1.813E-06 (X_U2.7)     .0192     
+
+(X_U2.8)     .0192 (X_U2.9)    0.0000 (X_U2.10)    -.6077                       
+
+(X_U2.11)   11.9600                   (X_U2.12)   11.9600                       
+
+(X_U2.13)    -.5938                   (X_U2.14)    -.5938                       
+
+(X_U2.53)   11.0000                   (X_U2.54)  -11.0000                       
+
+(X_U2.90) 375.7E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.337E-03
+    V_V2        -1.337E-03
+    V_V3         2.163E-07
+    X_U2.vb     -1.813E-11
+    X_U2.vc      1.098E-11
+    X_U2.ve      1.091E-11
+    X_U2.vlim    3.757E-07
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.21E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .30
+

@@ -1,0 +1,76 @@
+
+**** 04/23/11 10:52:19 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\USERS\DENG\DESKTOP\\EXPERIMENT\4\bjt1-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bjt1-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 0.01m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\BJT1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING BJT1-SCHEMATIC1.net ****
+* source BJT1
+D_D5         N02358 N04012 Dbreak 
+R_R1         N02010 N02427  10k  
+Q_Q2         N03080 N03612 N02836 Q2N2222
+R_R8         N03133 N03612  1k  
+V_V1         N008230 0 12Vdc
+D_D6         0 N02121 Dbreak 
+R_R2         N02010 N005090  10k  
+Q_Q3         N03612 N03080 N02917 Q2N2605
+R_R9         N02427 N02358  1k  
+V_V5         N05167 0 12Vdc
+D_D7         N02306 0 Dbreak 
+V_V2         N01528 0 -12Vdc
+R_R10         N02427 N007790  1k  
+R_R11         N03133 N01528  1k  
+X_U1         N02605 N02010 N05167 N05266 N02427 uA741
+R_R12         N02306 N008230  1k  
+D_D1         N02427 N005090 0.7V 
+R_R13         N02917 N03824  1k  
+X_U2         N03133 N02836 N05167 N05266 N02917 uA741
+R_R3         0 N02605  1k  
+R_R14         N03794 N02121  1k  
+D_D2         N02787 N02712 Dbreak 
+R_R15         N02121 N04012  1k  
+R_R4         N02427 N02605  1k  
+X_U3         N02306 N02358 N05167 N05266 N04012 uA741
+C_C1         0 N02010  100n  
+V_V6         0 N05266 12Vdc
+R_R16         0 N02121  1k  
+D_D3         0 N03133 Dbreak 
+R_R5         N02712 0  1k  
+C_C2         N02712 N02427  1n  
+Q_Q1         N03794 N03824 0 Q2N2222
+R_R17         N03032 N02917  1k  
+D_D4         N007790 N02358 Dbreak 
+R_R6         N02787 N02836  1k  
+C_C3         N02917 N02836  1n  
+R_R18         0 N03032  1k  
+R_R7         N03080 N03032  1k  
+C_C4         N04012 N02358  1n  
+
+**** RESUMING bjt1-schematic1-bias.sim.cir ****
+.END
+
+
+ERROR -- Model 7V used by D_D1 is undefined

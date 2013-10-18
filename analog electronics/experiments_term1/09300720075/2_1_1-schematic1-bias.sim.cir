@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Bias"  [ D:\09300720075\2_1_1-schematic1-bias.sim ] 
+
+** Creating circuit file "2_1_1-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1hz 100meghz
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\2_1_1-SCHEMATIC1.net" 
+
+
+.END

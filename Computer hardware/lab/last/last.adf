@@ -1,0 +1,91 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=last
+
+[Library]
+last=.\last.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+EnableCC=0
+EnableEXC=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+EnableExpressionCoverage=0
+
+[LocalVhdlSets]
+EnableExpressionCoverage=0
+CompileWithDebug=0
+
+[$LibMap$]
+last=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=microprocessor|behavior|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[ExpressionCoverage]
+Enabled=0
+
+[CoverageProfiler]
+SelectedTool=None
+
+[CodeCoverage]
+Enabled=0
+
+[PathCoverage]
+Enabled=0
+
+[Files]
+/instruction.vhd=-1
+/register.vhd=-1
+/comparation.vhd=-1
+/enable.vhd=-1
+/alu.vhd=-1
+/microprocessor.vhd=-1
+/testbench.vhd=-1
+/result0912.asdb=-1
+/result0912.awc=-1
+/resultwithclock.asdb=-1
+/resultwithclock.awc=-1
+/wave.asdb=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+
+[Files.Data]
+.\src\instruction.vhd=VHDL Source Code
+.\src\register.vhd=VHDL Source Code
+.\src\comparation.vhd=VHDL Source Code
+.\src\enable.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\microprocessor.vhd=VHDL Source Code
+.\src\testbench.vhd=VHDL Source Code
+.\src\result0912.asdb=Accelerated Waveform File
+.\src\result0912.awc=Accelerated Waveform Configuration
+.\src\resultwithclock.asdb=Accelerated Waveform File
+.\src\resultwithclock.awc=Accelerated Waveform Configuration
+.\src\wave.asdb=Accelerated Waveform File
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration

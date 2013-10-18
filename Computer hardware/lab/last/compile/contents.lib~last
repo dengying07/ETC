@@ -1,0 +1,16 @@
+1463
+~E 1 "./src/alu.vhd" 5 alu
+~A 1 "./src/alu.vhd" 12 simple
+~E 1 "./src/comparation.vhd" 5 comparation
+~A 1 "./src/comparation.vhd" 12 simple
+~E 1 "./src/enable.vhd" 5 enable
+~A 1 "./src/enable.vhd" 12 simple
+~E 1 "./src/instruction.vhd" 5 instruction
+~A 1 "./src/instruction.vhd" 16 simple
+~E 1 "./src/microprocessor.vhd" 4 microprocessor
+~A 1 "./src/microprocessor.vhd" 13 behavior
+~E 1 "./src/microprocessor.vhd" 4 processor
+~E 1 "./src/register.vhd" 4 reg
+~A 1 "./src/register.vhd" 18 simple
+~E 1 "./src/testbench.vhd" 4 testbench
+~A 1 "./src/testbench.vhd" 7 test

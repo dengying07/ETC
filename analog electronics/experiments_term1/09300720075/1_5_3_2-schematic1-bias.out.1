@@ -1,0 +1,60 @@
+
+**** 12/10/10 15:08:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Bias"  [ C:\Users\deng\Desktop\\experiments\09300720075\1_5_3_2-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_5_3_2-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad92\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500us 0 0,5u 
+-------------------$
+ERROR -- Undefined parameter
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1_5_3_2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1_5_3_2-SCHEMATIC1.net ****
+* source 1_5_3_2
+R_R11         N02543 N006851  47  
+C_C2         0 N01483  100u  
+R_R2         0 N01232  430k  
+C_C3         0 N01021  100u  
+R_R12         0 N02543  5.1k  
+R_R3         N01425 N00920  2k  
+C_C4         N01589 N00992  10u  
+C_C6         0 N02543  100u  
+R_R4         N01483 N01454  47  
+C_C5         N01652 N01425  10u  
+V_V2         N01194 0  
++SIN 0 50m 10k 0 0 0
+R_R5         0 N01483  5.1k  
+Q_Q1         N01425 N01232 N01454 Q2N2222
+R_R6         0 N01652  3.9k  
+Q_Q2         N00992 N01652 N01021 Q2N2222
+R_R7         N01652 N00920  24k  
+V_V1         N00920 0 12Vdc
+R_R8         N00992 N00920  1.2k  
+R_R1         N01232 N00920  130k  
+R_R9         0 N01021  220  
+R_R10         N006851 N01589  1k  
+C_C1         N01194 N01232  10u  
+
+**** RESUMING 1_5_3_2-schematic1-bias.sim.cir ****
+.END
+
